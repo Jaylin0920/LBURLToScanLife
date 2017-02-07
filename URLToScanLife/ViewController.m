@@ -47,6 +47,7 @@
             self.qrCodeImgView.image = [UIImage lbQRCodeWithUrlString:self.urlStr iconImage:[UIImage imageNamed:@"cyh"] withSize:width];
             break;
         case 4:
+            //根据url生成中间带圆角icon的二维码
             self.qrCodeImgView.image = [UIImage lbQRCodeWithUrlString:_urlStr iconImage:[UIImage imageNamed:@"cyh"] withSize:width iconCornerRadius:width/2];
             break;
         default:
