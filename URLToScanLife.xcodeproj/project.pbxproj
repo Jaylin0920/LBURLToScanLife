@@ -15,6 +15,7 @@
 		F62315051E487221007CFD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62315031E487221007CFD9D /* LaunchScreen.storyboard */; };
 		F62315101E487221007CFD9D /* URLToScanLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F623150F1E487221007CFD9D /* URLToScanLifeTests.m */; };
 		F623151B1E487221007CFD9D /* URLToScanLifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F623151A1E487221007CFD9D /* URLToScanLifeUITests.m */; };
+		F62315751E48808C007CFD9D /* UIImage+LBUrlToQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F62315741E48808C007CFD9D /* UIImage+LBUrlToQRCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F62315161E487221007CFD9D /* URLToScanLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLToScanLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F623151A1E487221007CFD9D /* URLToScanLifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLToScanLifeUITests.m; sourceTree = "<group>"; };
 		F623151C1E487221007CFD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62315731E48808C007CFD9D /* UIImage+LBUrlToQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LBUrlToQRCode.h"; sourceTree = "<group>"; };
+		F62315741E48808C007CFD9D /* UIImage+LBUrlToQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LBUrlToQRCode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +104,11 @@
 		F62314F41E487221007CFD9D /* URLToScanLife */ = {
 			isa = PBXGroup;
 			children = (
-				F62314F81E487221007CFD9D /* AppDelegate.h */,
-				F62314F91E487221007CFD9D /* AppDelegate.m */,
+				F6271D6D1E496B24001196D6 /* Application */,
 				F62314FB1E487221007CFD9D /* ViewController.h */,
 				F62314FC1E487221007CFD9D /* ViewController.m */,
-				F62314FE1E487221007CFD9D /* Main.storyboard */,
-				F62315011E487221007CFD9D /* Assets.xcassets */,
-				F62315031E487221007CFD9D /* LaunchScreen.storyboard */,
-				F62315061E487221007CFD9D /* Info.plist */,
+				F62315731E48808C007CFD9D /* UIImage+LBUrlToQRCode.h */,
+				F62315741E48808C007CFD9D /* UIImage+LBUrlToQRCode.m */,
 				F62314F51E487221007CFD9D /* Supporting Files */,
 			);
 			path = URLToScanLife;
@@ -117,6 +117,8 @@
 		F62314F51E487221007CFD9D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F62315011E487221007CFD9D /* Assets.xcassets */,
+				F62315061E487221007CFD9D /* Info.plist */,
 				F62314F61E487221007CFD9D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +140,17 @@
 				F623151C1E487221007CFD9D /* Info.plist */,
 			);
 			path = URLToScanLifeUITests;
+			sourceTree = "<group>";
+		};
+		F6271D6D1E496B24001196D6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F62314F81E487221007CFD9D /* AppDelegate.h */,
+				F62314F91E487221007CFD9D /* AppDelegate.m */,
+				F62314FE1E487221007CFD9D /* Main.storyboard */,
+				F62315031E487221007CFD9D /* LaunchScreen.storyboard */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62315751E48808C007CFD9D /* UIImage+LBUrlToQRCode.m in Sources */,
 				F62314FD1E487221007CFD9D /* ViewController.m in Sources */,
 				F62314FA1E487221007CFD9D /* AppDelegate.m in Sources */,
 				F62314F71E487221007CFD9D /* main.m in Sources */,
@@ -429,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C4WP8QZ2NZ;
 				INFOPLIST_FILE = URLToScanLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Crash.URLToScanLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C4WP8QZ2NZ;
 				INFOPLIST_FILE = URLToScanLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Crash.URLToScanLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +532,7 @@
 				F62315211E487221007CFD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F62315221E487221007CFD9D /* Build configuration list for PBXNativeTarget "URLToScanLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				F62315241E487221007CFD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F62315251E487221007CFD9D /* Build configuration list for PBXNativeTarget "URLToScanLifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				F62315271E487221007CFD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
