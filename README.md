@@ -17,7 +17,6 @@ self.qrCodeImgView.image = [UIImage lbQRCodeWithUrlString:self.urlStr withSize:w
 
 ```
 self.qrCodeImgView.image = [UIImage lbSpecialColorImage:[UIImage lbQRCodeWithUrlString:self.urlStr withSize:width] withRed:red green:green blue:blue];
-
 ```
 
 3.根据url生成中间带icon的二维码
